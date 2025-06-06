@@ -11,13 +11,14 @@ setup(
          ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', [
-            'launch/lidar_nav_bringup.launch.py', 'launch/rplidar.launch.py',
-            'launch/slam_toolbox.launch.py', 'launch/amcl.launch.py'
+            'launch/nav2.launch.py',
         ]),
         ('share/' + package_name + '/params', [
-            'params/rplidar_params.yaml',
-            'params/mapper_params_online_async.yaml',
-            'params/amcl_params.yaml',
+            'params/nav2_params.yaml',
+        ]),
+        ('share/' + package_name + '/maps', [
+            'maps/my_map.pgm',
+            'maps/my_map.yaml',
         ]),
     ],
     install_requires=['setuptools'],
