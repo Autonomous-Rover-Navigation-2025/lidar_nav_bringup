@@ -1,0 +1,7 @@
+image: UCI_map_occupancy.png
+mode: trinary
+resolution: 0.18903
+origin: [420838.20078707207, 3723601.9360203705, 0.0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.25

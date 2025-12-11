@@ -19,6 +19,13 @@ setup(
         ('share/' + package_name + '/maps', [
             'maps/my_map.pgm',
             'maps/my_map.yaml',
+            'maps/map_lab.pgm',
+            'maps/map_lab.yaml',
+            'maps/map_ics.pgm',
+            'maps/map_ics.yaml',
+        ]),
+        ('share/' + package_name + '/map_landmarks', [
+            'map_landmarks/landmarks_lab.yaml',
         ]),
     ],
     install_requires=['setuptools'],
@@ -29,6 +36,9 @@ setup(
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [],
+        'console_scripts': [
+            'static_tf_broadcasters = lidar_nav_bringup.static_tf_broadcasters:main ',
+            'location_goal_sender = lidar_nav_bringup.location_goal_sender:main ',
+        ],
     },
 )

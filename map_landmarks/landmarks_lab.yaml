@@ -1,0 +1,15 @@
+landmarks:
+  "chair":
+    frame_id: "map"
+    position: { x: 2.8150577545166016, y: -4.345285415649414, z: 0.0 }
+    orientation: { x: 0.0, y: 0.0, z: -0.7377498838014055, w: 0.675074150705693 }
+
+  "coffee machine":
+    frame_id: "map"
+    position: { x: 5.446136951446533, y: -1.4165244102478027, z: 0.0 }
+    orientation: { x: 0.0, y: 0.0, z: -0.7405084435264151, w: 0.6720470556933392 }
+
+  "engineering tower":
+    frame_id: "map"
+    position: { x: 7.7594757080078125, y: 13.349437713623047, z: 0.0 }
+    orientation: { x: 0.0, y: 0.0, z: 0.7292685348158177, w: 0.6842275967304963 }

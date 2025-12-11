@@ -16,8 +16,9 @@ def generate_launch_description():
     # Declare arguments
     declare_map_arg = DeclareLaunchArgument(
         'map',
-        default_value=os.path.join(lidar_nav_bringup_dir, 'maps',
-                                   'my_map.yaml'),
+        # default_value=os.path.join(lidar_nav_bringup_dir, 'maps',
+        #                            'UCI_map_occupancy.yaml'),
+        default_value=os.path.join(lidar_nav_bringup_dir, 'maps','map_ics.yaml'),
         description='Path to the map YAML file')
 
     declare_global_frame_arg = DeclareLaunchArgument(
